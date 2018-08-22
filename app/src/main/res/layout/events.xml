@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:id="@+id/lMain">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/eventPictureAdapter"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/land" />
+
+
+                        <TextView
+                            android:id="@+id/eventNameAdapter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/eventPictureAdapter"
+                            android:text="name"
+                            android:textSize="30sp" />
+
+
+                        <TextView
+                            android:id="@+id/eventDateAdapter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/eventNameAdapter"
+                            android:layout_centerVertical="true"
+                            android:text="date"
+                            android:layout_alignLeft="@+id/eventNameAdapter" />
+
+
+                        <TextView
+                            android:id="@+id/eventTimeAdapter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/eventDateAdapter"
+                            android:text="time"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/eventDateAdapter" />
+
+                        <TextView
+                            android:id="@+id/eventIdAdapter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/eventTimeAdapter"
+                            android:text="id"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/eventDateAdapter" />
+
+                        <TextView
+                            android:id="@+id/eventDateInSqlAdapter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/eventIdAdapter"
+                            android:text="date"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/eventDateAdapter" />
+
+                </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
